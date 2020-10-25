@@ -2,16 +2,16 @@
   "name": "marqu-dison-p1",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node -r esm server.js",
-    "server": "nodemon -r esm server.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/itdev161/marqu-dison-p1.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -19,7 +19,12 @@
   },
   "homepage": "https://github.com/itdev161/marqu-dison-p1#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "joi": "^17.2.1"
+    "mongoose": "^5.10.10",
+    "mongoose-timestamp": "^0.6.0",
+    "restify": "^8.5.1",
+    "restify-errors": "^8.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
